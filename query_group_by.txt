@@ -8,3 +8,4 @@ SELECT count(id), `office_address` FROM `teachers` GROUP BY `office_address`;
 SELECT `exam_id`, avg(vote) FROM `exam_student` GROUP BY `exam_id`;
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT `department_id`, `name`, count(id) FROM `degrees` GROUP BY `department_id`;
